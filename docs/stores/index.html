@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pinia | Vue.js Proyecto Tienda</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    
+    <meta name="description" content="Nivel principiantes">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/tienda/assets/css/0.styles.82ea0926.css" as="style"><link rel="preload" href="/tienda/assets/js/app.aa8c23e1.js" as="script"><link rel="preload" href="/tienda/assets/js/2.743b3f37.js" as="script"><link rel="preload" href="/tienda/assets/js/16.a569191a.js" as="script"><link rel="prefetch" href="/tienda/assets/js/10.85c0eaf3.js"><link rel="prefetch" href="/tienda/assets/js/11.5396e238.js"><link rel="prefetch" href="/tienda/assets/js/12.a3c6245d.js"><link rel="prefetch" href="/tienda/assets/js/13.bfba52f6.js"><link rel="prefetch" href="/tienda/assets/js/14.46e5cc0d.js"><link rel="prefetch" href="/tienda/assets/js/15.5eed1a39.js"><link rel="prefetch" href="/tienda/assets/js/3.0717bf0c.js"><link rel="prefetch" href="/tienda/assets/js/4.1a8f7237.js"><link rel="prefetch" href="/tienda/assets/js/5.bb6a4b3f.js"><link rel="prefetch" href="/tienda/assets/js/6.034b101a.js"><link rel="prefetch" href="/tienda/assets/js/7.2f30368f.js"><link rel="prefetch" href="/tienda/assets/js/8.3c8f93b5.js"><link rel="prefetch" href="/tienda/assets/js/9.56df714c.js">
+    <link rel="stylesheet" href="/tienda/assets/css/0.styles.82ea0926.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/tienda/" class="home-link router-link-active"><!----> <span class="site-name">Vue.js Proyecto Tienda</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/tienda/setup/" class="nav-link">
+  Configuración
+</a></div><div class="nav-item"><a href="/tienda/home/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/tienda/product/" class="nav-link">
+  Productos
+</a></div><div class="nav-item"><a href="/tienda/cart/" class="nav-link">
+  Cesta
+</a></div><div class="nav-item"><a href="/tienda/stores/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Store/Pinia
+</a></div><div class="nav-item"><a href="https://youtu.be/FAtC9YKy1Rk" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Canal Youtube
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/tienda/setup/" class="nav-link">
+  Configuración
+</a></div><div class="nav-item"><a href="/tienda/home/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/tienda/product/" class="nav-link">
+  Productos
+</a></div><div class="nav-item"><a href="/tienda/cart/" class="nav-link">
+  Cesta
+</a></div><div class="nav-item"><a href="/tienda/stores/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Store/Pinia
+</a></div><div class="nav-item"><a href="https://youtu.be/FAtC9YKy1Rk" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Canal Youtube
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Pinia</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tienda/stores/#stores" class="sidebar-link">Stores</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tienda/stores/#store-products-ts" class="sidebar-link">store &gt; products.ts</a></li><li class="sidebar-sub-header"><a href="/tienda/stores/#store-cart-ts" class="sidebar-link">store &gt; cart.ts</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="pinia"><a href="#pinia" class="header-anchor">#</a> Pinia</h1> <h2 id="stores"><a href="#stores" class="header-anchor">#</a> Stores</h2> <h3 id="store-products-ts"><a href="#store-products-ts" class="header-anchor">#</a> store &gt; products.ts</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> defineStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'pinia'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> collection<span class="token punctuation">,</span> query<span class="token punctuation">,</span> getDocs<span class="token punctuation">,</span> orderBy <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;firebase/firestore&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> db <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;../firebase&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">Product</span> <span class="token punctuation">{</span>
+    id<span class="token operator">:</span> string<span class="token punctuation">;</span>
+    title<span class="token operator">:</span> string<span class="token punctuation">;</span>
+    price<span class="token operator">:</span> number<span class="token punctuation">;</span>
+    description<span class="token operator">:</span> string<span class="token punctuation">;</span>
+    category<span class="token operator">:</span> string<span class="token punctuation">;</span>
+    image<span class="token operator">:</span> string<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token keyword">interface</span> <span class="token class-name">ProductState</span> <span class="token punctuation">{</span>
+  items<span class="token operator">:</span> Record<span class="token operator">&lt;</span>string<span class="token punctuation">,</span> Product<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+  ids<span class="token operator">:</span> string<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  productos<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  total<span class="token operator">:</span> number<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> useProductStore <span class="token operator">=</span> <span class="token function">defineStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  id<span class="token operator">:</span> <span class="token string">'products'</span><span class="token punctuation">,</span>
+
+  state<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token parameter">ProductState</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    items<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    ids<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    productos<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    total<span class="token operator">:</span> <span class="token number">0</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  getters<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">list</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> Product<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>ids<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">i</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>items<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">loaded</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> boolean <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>ids<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token keyword">async</span> <span class="token function">obtenerDatos</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> first <span class="token operator">=</span> <span class="token function">query</span><span class="token punctuation">(</span><span class="token function">collection</span><span class="token punctuation">(</span>db<span class="token punctuation">,</span> <span class="token string">&quot;productos&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">orderBy</span><span class="token punctuation">(</span><span class="token string">&quot;title&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>productos <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token keyword">const</span> querySnapshot <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">getDocs</span><span class="token punctuation">(</span>first<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      querySnapshot<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">doc</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        
+        <span class="token keyword">let</span> producto <span class="token operator">=</span> doc<span class="token punctuation">.</span><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        producto<span class="token punctuation">.</span>id <span class="token operator">=</span> doc<span class="token punctuation">.</span>id<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>total <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>productos<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>producto<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>total<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Este es el array productos&quot;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>productos<span class="token punctuation">)</span>
+      <span class="token keyword">const</span> data<span class="token operator">:</span> Product<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>productos<span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>ids <span class="token operator">=</span> data<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">product</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>items<span class="token punctuation">[</span>product<span class="token punctuation">.</span>id<span class="token punctuation">]</span> <span class="token operator">=</span> product <span class="token punctuation">;</span>
+      <span class="token keyword">return</span> product<span class="token punctuation">.</span>id<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Este es el array ids&quot;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>ids<span class="token punctuation">)</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Este es el objeto items&quot;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>items<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="store-cart-ts"><a href="#store-cart-ts" class="header-anchor">#</a> store &gt; cart.ts</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> defineStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'pinia'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> <span class="token constant">CART_STORAGE</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../composables/usePersistCart'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useProductStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./products'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Tipos de datos</span>
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">Purchase</span> <span class="token punctuation">{</span>
+  productId<span class="token operator">:</span> string<span class="token punctuation">;</span>
+  quantity<span class="token operator">:</span> number<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// Tipo de datos</span>
+<span class="token keyword">interface</span> <span class="token class-name">CartState</span> <span class="token punctuation">{</span>
+  contents<span class="token operator">:</span> Record<span class="token operator">&lt;</span>string<span class="token punctuation">,</span> Purchase<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// Tipo de datos</span>
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">CartPreview</span> <span class="token punctuation">{</span>
+  id<span class="token operator">:</span> string<span class="token punctuation">;</span>
+  image<span class="token operator">:</span> string<span class="token punctuation">;</span>
+  title<span class="token operator">:</span> string<span class="token punctuation">;</span>
+  quantity<span class="token operator">:</span> number<span class="token punctuation">;</span>
+  cost<span class="token operator">:</span> number<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> useCartStore <span class="token operator">=</span> <span class="token function">defineStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  id<span class="token operator">:</span> <span class="token string">'cart'</span><span class="token punctuation">,</span>
+
+  state<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token parameter">CartState</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    
+    contents<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token constant">CART_STORAGE</span><span class="token punctuation">)</span> <span class="token keyword">as</span> string<span class="token punctuation">)</span> <span class="token operator">??</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+  getters<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">count</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> number <span class="token punctuation">{</span>                         <span class="token comment">// acumulado</span>
+      <span class="token keyword">return</span> Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>contents<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">acc<span class="token punctuation">,</span> id</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> acc <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>contents<span class="token punctuation">[</span>id<span class="token punctuation">]</span><span class="token punctuation">.</span>quantity<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token function">total</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> number <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> products <span class="token operator">=</span> <span class="token function">useProductStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>contents<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">acc<span class="token punctuation">,</span> id</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> acc <span class="token operator">+</span> products<span class="token punctuation">.</span>items<span class="token punctuation">[</span>id<span class="token punctuation">]</span><span class="token punctuation">.</span>price <span class="token operator">*</span> <span class="token keyword">this</span><span class="token punctuation">.</span>contents<span class="token punctuation">[</span>id<span class="token punctuation">]</span><span class="token punctuation">.</span>quantity<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token function">formattedCart</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> CartPreview<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> products <span class="token operator">=</span> <span class="token function">useProductStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>products<span class="token punctuation">.</span>loaded<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">return</span> Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>contents<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">productId</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> purchase <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>contents<span class="token punctuation">[</span>productId<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+          id<span class="token operator">:</span> purchase<span class="token punctuation">.</span>productId<span class="token punctuation">,</span>
+          image<span class="token operator">:</span> products<span class="token punctuation">.</span>items<span class="token punctuation">[</span>purchase<span class="token punctuation">.</span>productId<span class="token punctuation">]</span><span class="token punctuation">.</span>image<span class="token punctuation">,</span>
+          title<span class="token operator">:</span> products<span class="token punctuation">.</span>items<span class="token punctuation">[</span>purchase<span class="token punctuation">.</span>productId<span class="token punctuation">]</span><span class="token punctuation">.</span>title<span class="token punctuation">,</span>
+          quantity<span class="token operator">:</span> purchase<span class="token punctuation">.</span>quantity<span class="token punctuation">,</span>
+          cost<span class="token operator">:</span> purchase<span class="token punctuation">.</span>quantity <span class="token operator">*</span> products<span class="token punctuation">.</span>items<span class="token punctuation">[</span>purchase<span class="token punctuation">.</span>productId<span class="token punctuation">]</span><span class="token punctuation">.</span>price<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  actions<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">add</span><span class="token punctuation">(</span><span class="token parameter">productId<span class="token operator">:</span> string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>contents<span class="token punctuation">[</span>productId<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>contents<span class="token punctuation">[</span>productId<span class="token punctuation">]</span><span class="token punctuation">.</span>quantity <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>contents<span class="token punctuation">[</span>productId<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+          productId<span class="token punctuation">,</span>
+          quantity<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">remove</span><span class="token punctuation">(</span><span class="token parameter">productId<span class="token operator">:</span> string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>contents<span class="token punctuation">[</span>productId<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token keyword">this</span><span class="token punctuation">.</span>contents<span class="token punctuation">[</span>productId<span class="token punctuation">]</span><span class="token punctuation">.</span>quantity <span class="token operator">-=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>contents<span class="token punctuation">[</span>productId<span class="token punctuation">]</span><span class="token punctuation">.</span>quantity <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">delete</span> <span class="token keyword">this</span><span class="token punctuation">.</span>contents<span class="token punctuation">[</span>productId<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/tienda/assets/js/app.aa8c23e1.js" defer></script><script src="/tienda/assets/js/2.743b3f37.js" defer></script><script src="/tienda/assets/js/16.a569191a.js" defer></script>
+  </body>
+</html>
